@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/assets/jawad2-removebg-preview3-CNhWDfMl.png" type="image/x-icon" class="rounded-full">
+    <title>Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link rel="stylesheet" crossorigin href="/assets/index-DFCDX2wN.css">
+  </head>
+  <body>
+    <nav class="flex items-center justify-between text-black fixed bg-opacity-25 bg-zinc-300 w-full px-4 md:px-20">
+      <img class="h-11 my-4 rounded-full" src="/assets/jawad2-removebg-preview3-CNhWDfMl.png" alt="Logo" />
+      <div class="md:hidden">
+        <button id="menu-button" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden md:flex space-x-4 md:space-x-12 text-base cursor-pointer" id="menu">
+        <li></li>
+        <li>
+          <a href="#Home" class="hover:text-blue-800">Home</a>
+        </li>
+        <li>
+          <a href="#About" class="hover:text-blue-800">About</a>
+        </li>
+        <li>
+          <a href="#Services" class="hover:text-blue-800">Services</a>
+        </li>
+        <li>
+          <a href="#Skills" class="hover:text-blue-800">Skills</a>
+        </li>
+        <li>
+          <a href="#Contact" class="hover:text-blue-800">Contact</a>
+        </li>
+        <li class="relative">
+          <button class="peer hover:text-blue-800">Pages</button>
+          <div class="absolute hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg">
+            <a class="px-5 py-3 hover:bg-gray-200" href="#">About Us</a>
+            <a class="px-5 py-3 hover:bg-gray-200" href="#">Contact Us</a>
+            <a class="px-5 py-3 hover:bg-gray-200" href="#">Privacy Policy</a>
+          </div>
+        </li>
+      </ul>
+      <div class="hidden md:block">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full hover:shadow-xl">
+          <a href="jawadahmad resume.pdf">Download CV</a>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <ul class="md:hidden flex-col space-y-4 text-base cursor-pointer mt-4 hidden" id="mobile-menu">
+      <li>
+        <a href="#Home" class="hover:text-blue-800">Home</a>
+      </li>
+      <li>
+        <a href="#About" class="hover:text-blue-800">About</a>
+      </li>
+      <li>
+        <a href="#Services" class="hover:text-blue-800">Services</a>
+      </li>
+      <li>
+        <a href="#Skills" class="hover:text-blue-800">Skills</a>
+      </li>
+      <li>
+        <a href="#Contact" class="hover:text-blue-800">Contact</a>
+      </li>
+      <li class="relative">
+        <button class="peer hover:text-blue-800">Pages</button>
+        <div class="absolute hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg">
+          <a class="px-5 py-3 hover:bg-gray-200" href="#">About Us</a>
+          <a class="px-5 py-3 hover:bg-gray-200" href="#">Contact Us</a>
+          <a class="px-5 py-3 hover:bg-gray-200" href="#">Privacy Policy</a>
+        </div>
+      </li>
+      <li>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full hover:shadow-xl">
+          <a href="jawadahmad resume.pdf">Download CV</a>
+        </button>
+      </li>
+    </ul>
+
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+<section class="flex flex-col md:flex-row items-center" id="Home">
+  <div class="left py-12 md:py-36 mx-4 md:mx-20 text-center md:text-left">
+    <p class="font-bold text-blue-600">Hey There 👋 I am</p>
+    <h1 class="text-3xl md:text-5xl font-sans text-black font-bold">Jawad Ahmad</h1>
+    <p class="text-black py-4 font-light text-xl md:text-2xl">
+        Professional Web Developer
+    </p>
+    <p class="text-[#959cb1] font-semibold">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores at repellat quasi.
+    </p>
+    <div class="flex flex-col md:flex-row mt-8">
+      <button class="bg-blue-500 text-lg hover:bg-blue-700 hover:shadow-2xl mx-1 my-2 md:my-8 rounded-full text-white font-semibold py-3 px-8">
+        Contact Me
+      </button>
+      <button class="bg-black text-lg hover:shadow-2xl mx-1 my-2 md:my-8 rounded-full text-white font-semibold py-3 px-8">
+        Learn More
+      </button>
+    </div>
+  </div>
+  <div class="bg-blue-700 rounded-ss-full pr-24 size-fit mt-8 md:mt-0">
+    <img class="h-auto max-w-full size-full" src="/assets/jawad1-removebg-preview-DwqZSUO5.png" alt="Jawad Ahmad">
+  </div>
+</section>
+
+<div class="flex flex-col md:flex-row h-full w-full py-10 md:py-20 px-4 md:px-24">
+  <div class="left mb-10 md:mb-0 md:mx-24">
+    <p class="text-blue-600 font-sans text-xl font-bold" id="About">
+      ABOUT ME
+    </p>
+    <div class="text-3xl md:text-5xl font-bold">
+      <h1>Better Design,</h1>
+      <h1>Better Experience</h1>
+      <p class="text-[#959cb1] text-sm md:text-base font-medium font-sans py-6">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nisi
+        aliquid quia voluptate nam sint tenetur officia modi eaque aspernatur.
+      </p>
+    </div>
+  </div>
+  <div class="right font-bold text-2xl md:text-3xl font-sans">
+    <h2>Connect With Me</h2>
+    <p class="text-[#959cb1] text-sm md:text-base font-medium font-sans py-6">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Molestias nisi aliquid quia voluptate nam sint tenetur officia aspernatur.
+      Lorem ipsum dolor sit amet.
+    </p>
+
+    <div class="button flex space-x-2 md:space-x-4 py-1">
+      <div>
+        <button class="rounded-full text-xs py-2 px-2 hover:shadow-sm hover:shadow-black">
+          <img src="/assets/fbicon-DbgZerbu.gif" alt="Facebook" class="h-6 w-6 md:h-8 md:w-8" />
+        </button>
+      </div>
+      <div>
+        <button class="rounded-full text-xs py-2 px-2 hover:shadow-sm hover:shadow-black">
+          <img src="/assets/xx-Be05MJDJ.gif" alt="Twitter" class="h-6 w-6 md:h-8 md:w-8" />
+        </button>
+      </div>
+      <div>
+        <button class="rounded-full text-xs py-2 px-2 hover:shadow-sm hover:shadow-black">
+          <img src="/assets/youtu-BJPy4B87.gif" alt="YouTube" class="h-6 w-6 md:h-8 md:w-8" />
+        </button>
+      </div>
+      <div>
+        <button class="rounded-full text-xs py-2 px-2 hover:shadow-sm hover:shadow-black">
+          <img src="/assets/llink-DIs-WlPF.gif" alt="LinkedIn" class="h-6 w-6 md:h-8 md:w-8" />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mx-4 md:mx-24">
+  <p class="text-blue-600 text-center text-xl font-bold">What I Offer</p>
+  <h1 class="text-center font-bold text-3xl md:text-5xl" id="Services">My Services</h1>
+  <p class="text-[#959cb1] font-medium font-sans py-4 text-center mx-2 md:mx-36 text-sm md:text-lg">
+    There are many variations of passages of Lorem Lorem ipsum dolor sit amet consecteIpsum available but the majority have suffered alteration in some form.
+  </p>
+
+  <div class="py-8">
+    <div class="flex flex-wrap justify-center md:justify-around gap-4">
+      <div class="group rounded-xl hover:bg-blue-700 h-auto w-full md:w-60 shadow-lg hover:text-white p-4">
+        <img class="rounded-full mx-auto my-4 h-24 w-24" src="/assets/user2-AcLMlWnq.gif" alt="" />
+        <h1 class="text-center font-bold text-xl md:text-2xl group-hover:text-white">HTML Expert</h1>
+        <p class="text-center py-1 font-medium text-[#959cb1] group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligulavel in.
+        </p>
+      </div>
+
+      <div class="group rounded-xl hover:bg-blue-700 h-auto w-full md:w-60 shadow-lg hover:text-white p-4">
+        <img class="rounded-full mx-auto my-4 h-24 w-24" src="/assets/test-D9sz8s-D.gif" alt="" />
+        <h1 class="text-center font-bold text-xl md:text-2xl group-hover:text-white">Web Design</h1>
+        <p class="text-center py-1 font-medium text-[#959cb1] group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligulavel in.
+        </p>
+      </div>
+
+      <div class="group rounded-xl hover:bg-blue-700 h-auto w-full md:w-60 shadow-lg hover:text-white p-4">
+        <img class="rounded-full mx-auto my-4 h-24 w-24" src="/assets/icons8-user-CkhMxDom.gif" alt="" />
+        <h1 class="text-center font-bold text-xl md:text-2xl group-hover:text-white">Tailwind CSS</h1>
+        <p class="text-center py-1 font-medium text-[#959cb1] group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligulavel in.
+        </p>
+      </div>
+
+      <div class="group rounded-xl hover:bg-blue-700 h-auto w-full md:w-60 shadow-lg hover:text-white p-4">
+        <img class="rounded-full mx-auto my-4 h-24 w-24" src="/assets/proto-B2El-gWR.gif" alt="" />
+        <h1 class="text-center font-bold text-xl md:text-2xl group-hover:text-white">Interactive JS</h1>
+        <p class="text-center py-1 font-medium text-[#959cb1] group-hover:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula vel in.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-16 md:py-28 bg-slate-100 my-10">
+  <p class="mx-4 md:mx-24 flex justify-center text-blue-500 text-lg md:text-xl font-bold">
+    Creative Portfolios
+  </p>
+  <p class="mx-4 md:mx-24 flex text-3xl md:text-5xl text-black font-bold justify-center font-sans">
+    Recent Works
+  </p>
+  <p class="text-[#959cb1] font-medium font-sans py-4 text-center mx-4 md:mx-48 text-base md:text-lg">
+    There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form. Lorem ipsum dolor icing elit. Error, aut!
+  </p>
+  <div class="flex justify-center flex-wrap gap-2">
+    <button class="bg-blue-600 text-base hover:shadow-2xl mx-1 my-2 rounded-full text-white font-semibold py-2 px-6 filter-button" data-filter="all">
+      All
+    </button>
+    <button class="hover:bg-blue-600 text-base hover:shadow-2xl mx-1 my-2 rounded-full text-[#959cb1] hover:text-white font-semibold py-2 px-6 filter-button" data-filter="web-design">
+      Web Design
+    </button>
+    <button class="hover:bg-blue-600 text-base hover:shadow-2xl mx-1 my-2 rounded-full text-[#959cb1] hover:text-white font-semibold py-2 px-6 filter-button" data-filter="graphics">
+      Graphics
+    </button>
+    <button class="hover:bg-blue-600 text-base hover:shadow-2xl mx-1 my-2 rounded-full text-[#959cb1] hover:text-white font-semibold py-2 px-6 filter-button" data-filter="app">
+      App
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mx-4 md:mx-24">
+    <div class="category-item web-design p-4 bg-white rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="/assets/portfolio-02-CIoiO26B.jpg" alt="Image 1" class="cursor-pointer w-full h-auto" />
+      <p class="text-xl text-black font-medium py-2 hover:text-blue-500">
+        Job portal landing page
+      </p>
+      <p class="text-[#959cb1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dolor ultrices libero.
+      </p>
+    </div>
+    <div class="category-item graphics p-4 bg-white rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="/assets/portfolio-01-D28H1E2i.jpg" alt="Image 2" class="cursor-pointer w-full h-auto" />
+      <p class="text-xl text-black font-medium py-2 hover:text-blue-500">
+        Start-up Landing Page
+      </p>
+      <p class="text-[#959cb1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dolor ultrices libero.
+      </p>
+    </div>
+    <div class="category-item app p-4 bg-white rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="/assets/portfolio-02-CIoiO26B.jpg" alt="Image 3" class="cursor-pointer w-full h-auto" />
+      <p class="text-xl text-black font-medium py-2 hover:text-blue-500">
+        Job portal landing page
+      </p>
+      <p class="text-[#959cb1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dolor ultrices libero.
+      </p>
+    </div>
+    <div class="category-item web-design p-4 bg-white rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="/assets/portfolio-03-vW_HKKWW.jpg" alt="Image 4" class="cursor-pointer w-full h-auto" />
+      <p class="text-xl text-black font-medium py-2 hover:text-blue-500">
+        SaaS landing page
+      </p>
+      <p class="text-[#959cb1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dolor ultrices libero.
+      </p>
+    </div>
+    <div class="category-item graphics p-4 bg-white rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="/assets/portfolio-04-C8imFDQI.jpg" alt="Image 5" class="cursor-pointer w-full h-auto" />
+      <p class="text-xl text-black font-medium py-2 hover:text-blue-500">
+        Business & corporate template
+      </p>
+      <p class="text-[#959cb1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dolor ultrices libero.
+      </p>
+    </div>
+    <div class="category-item app p-4 bg-white rounded shadow hover:shadow-lg transform hover:scale-105 transition duration-300">
+      <img src="/assets/portfolio-03-vW_HKKWW.jpg" alt="Image 6" class="cursor-pointer w-full h-auto" />
+      <p class="text-xl text-black font-medium py-2 hover:text-blue-500">
+        SaaS landing page
+      </p>
+      <p class="text-[#959cb1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dolor ultrices libero.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter-button");
+      const categoryItems = document.querySelectorAll(".category-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("bg-blue-600", "text-white");
+            btn.classList.add("text-[#959cb1]");
+          });
+
+          button.classList.add("bg-blue-600", "text-white");
+          button.classList.remove("text-[#959cb1]");
+
+          categoryItems.forEach((item) => {
+            if (filter === "all" || item.classList.contains(filter)) {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+        });
+      });
+    });
+  </script>
+</div>
+<div class="bg-blue-950 max-h-max">
+  <h1 class="text-center font-bold text-white text-3xl md:text-4xl pt-12 md:pt-24">
+    Some of My Happy Clients
+  </h1>
+  <p class="text-[#959cb1] font-medium font-sans text-center mx-4 md:mx-72 text-base md:text-lg py-5">
+    There are many variations of passages of Lorem Lorem ipsum dolor sit amet consecteIpsum available but the majority have suffered alteration in some form.
+  </p>
+
+  <div class="flex flex-wrap justify-center space-x-0 md:space-x-28 mx-4 md:mx-24 py-8 md:py-16">
+    <div class="m-2 size-28">
+      <a href="https://uideck.com/"><img src="/assets/uideck-C5fYRWMW.svg" alt=""/></a>
+    </div>
+    <div class="m-2 size-28">
+      <a href="https://tailgrids.com/"><img src="/assets/tailgrids-CbjG5q0a.svg" alt=""/></a>
+    </div>
+    <div class="m-2 size-28 py-2">
+      <a href="https://lineicons.com/"><img src="/assets/lineicons-xo8S5XCc.svg" alt=""/></a>
+    </div>
+    <div class="m-2 size-28">
+      <a href="https://ayroui.com/"><img src="data:image/svg+xml,%3csvg%20width='200'%20height='52'%20viewBox='0%200%20200%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.56'%20d='M19.3545%204.27083C19.3545%201.9112%2021.2792%200%2023.6556%200H25.8061C40.0588%200%2051.6126%2011.4725%2051.6126%2025.625V46.9792C51.6126%2049.3388%2049.6879%2051.25%2047.3115%2051.25H45.161C30.9083%2051.25%2019.3545%2039.7775%2019.3545%2025.625V4.27083Z'%20fill='%234A6CF7'/%3e%3cpath%20opacity='0.88'%20d='M21.5054%2051.25C33.3825%2051.25%2043.0108%2041.6894%2043.0108%2029.8958C43.0108%2018.1022%2033.3825%208.54163%2021.5054%208.54163C9.62829%208.54163%200%2018.1022%200%2029.8958C0%2041.6894%209.62829%2051.25%2021.5054%2051.25Z'%20fill='%234A6CF7'/%3e%3cpath%20d='M81.0229%2040.7165H88.1982L78.1245%2012.8125H70.2804L60.2148%2040.7165H67.3079L68.9756%2035.7876H79.3546L81.0229%2040.7165ZM77.6127%2030.5407H70.7595L74.1611%2020.3251L77.6127%2030.5407ZM101.443%2032.4088L96.3315%2018.5364H88.76L97.76%2039.9612L92.6821%2051.25H99.981L113.853%2018.5364H106.521L101.443%2032.4088ZM123.076%2030.4214C123.076%2026.6055%20124.942%2025.4925%20128.155%2025.4925H130.012V18.2979C127.04%2018.2979%20124.62%2019.8879%20123.076%2022.2331V18.5364H116.297V40.7165H123.076V30.4214ZM154.891%2029.6264C154.891%2022.5908%20149.904%2018.2184%20143.397%2018.2184C136.94%2018.2184%20131.903%2022.5908%20131.903%2029.6264C131.903%2036.6621%20136.825%2041.0344%20143.323%2041.0344C149.821%2041.0344%20154.891%2036.6621%20154.891%2029.6264ZM138.806%2029.6264C138.806%2025.8502%20140.945%2024.1013%20143.397%2024.1013C145.775%2024.1013%20147.997%2025.8502%20147.997%2029.6264C147.997%2033.3628%20145.742%2035.1516%20143.323%2035.1516C140.862%2035.1516%20138.806%2033.3628%20138.806%2029.6264ZM169.572%2030.5009C169.572%2037.6955%20174.246%2040.9947%20179.96%2040.9947C185.665%2040.9947%20190.381%2037.6955%20190.381%2030.5009V13.0113H186.772V30.5407C186.772%2035.6286%20184.08%2037.8148%20179.993%2037.8148C175.914%2037.8148%20173.181%2035.6286%20173.181%2030.5407V13.0113H169.572V30.5009ZM196.4%2040.7165H200V13.0113H196.4V40.7165Z'%20fill='%23fff'/%3e%3c/svg%3e" alt=""/></a>
+    </div>
+    <div class="m-2 size-28 py-2">
+      <a href="https://plainadmin.com/"><img src="/assets/plainadmin-CPVSC7iG.svg" alt=""/></a>
+    </div>
+  </div>
+  <div class="bg-blue-500 mx-4 md:mx-24 h-auto pt-8 md:pt-12 flex flex-col py-10 md:py-14 rounded-md">
+    <p class="text-white font-bold font-sans text-center mx-4 md:mx-32 text-2xl md:text-5xl py-4 md:py-8">
+      Want to work together and create <br class="hidden md:block"/>amazing products with me?
+    </p>
+
+    <div class="flex flex-col md:flex-row items-center justify-center px-4 md:px-52 space-y-4 md:space-y-0">
+      <div class="text-lg mx-1 rounded-full text-white font-semibold py-4 md:py-11 px-8 md:px-32 bg-opacity-5 bg-slate-400">
+        <p>Enter Your Email</p>
+      </div>
+      <div>
+        <button class="bg-white text-lg mx-1 my-8 md:my-0 rounded-full text-blue-500 font-semibold py-3 px-8">
+          Get a Quote
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex-col py-14 my-12 md:my-24 bg-slate-100 mx-4 md:mx-24 rounded-md hover:shadow-sm hover:shadow-black">
+  <p class="text-blue-600 text-center text-xl font-bold">
+    Education & Experience
+  </p>
+  <h1 class="text-center font-bold text-3xl md:text-5xl" id="Skills">My Resume</h1>
+  <p class="text-[#959cb1] font-medium font-sans py-4 text-center mx-4 md:mx-36 text-base md:text-lg">
+    There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.
+  </p>
+
+  <div class="py-12 md:py-24 bg-slate-100">
+    <div class="text-left mx-4 md:mx-24 mb-8 md:mb-16">
+      <h1 class="text-blue-600 font-bold text-xl">Front-End Developer</h1>
+      <p class="font-bold text-[#959cb1] text-lg md:text-xl font-mono">HTML Expert</p>
+      <button class="bg-blue-500 hover:bg-blue-700 font-semibold text-white px-4 md:px-6 py-1 mt-1 rounded-full">
+        2022-2024
+      </button>
+      <p class="text-[#959cb1] font-medium font-sans py-4 text-start mr-0 md:mr-96 text-base md:text-lg">
+        I'm a student of BS Computer Science Graduating from MNS University of Agriculture Multan. I spend almost 2 years in Front-End Development.
+      </p>
+    </div>
+
+    <hr class="mx-4 md:mx-24">
+
+    <div class="text-left md:text-right mt-2 mx-4 md:mx-24 mb-8 md:mb-16">
+      <h1 class="text-blue-600 font-bold text-xl">Front-End Developer</h1>
+      <p class="font-bold text-[#959cb1] text-lg md:text-xl font-mono">CSS Expert</p>
+      <button class="bg-blue-500 hover:bg-blue-700 font-semibold text-white px-4 md:px-6 py-1 mt-1 rounded-full">
+        2022-2024
+      </button>
+      <p class="text-[#959cb1] font-medium font-sans py-4 text-start md:text-end ml-0 md:ml-96 text-base md:text-lg">
+        I got 89% marks in Matriculation and scored 95% in Fsc Engineering.
+      </p>
+    </div>
+
+    <hr class="mx-4 md:mx-24">
+
+    <div class="text-left mt-2 mx-4 md:mx-24 mb-8 md:mb-16">
+      <h1 class="text-blue-600 font-bold text-xl">Front-End Developer</h1>
+      <p class="font-bold text-[#959cb1] text-lg md:text-xl font-mono">Tailwind CSS Expert</p>
+      <button class="bg-blue-500 hover:bg-blue-700 font-semibold text-white px-4 md:px-6 py-1 mt-1 rounded-full">
+        2022-2024
+      </button>
+      <p class="text-[#959cb1] font-medium font-sans py-4 text-start mr-0 md:mr-96 text-base md:text-lg">
+        Currently i'm learning MERN STACK Development.
+      </p>
+    </div>
+
+    <hr class="mx-4 md:mx-24">
+
+    <div class="text-left md:text-right mt-2 mx-4 md:mx-24 mb-8 md:mb-16">
+      <h1 class="text-blue-600 font-bold text-xl">Front-End Developer</h1>
+      <p class="font-bold text-[#959cb1] text-lg md:text-xl font-mono">JavaScript Beginner</p>
+      <button class="bg-blue-500 hover:bg-blue-700 font-semibold text-white px-4 md:px-6 py-1 mt-1 rounded-full">
+        2022-2024
+      </button>
+      <p class="text-[#959cb1] font-medium font-sans py-4 text-start md:text-end ml-0 md:ml-96 text-base md:text-lg">
+        These days i'm building projects for my virtual internship from <strong>PROGRAMMERSTECH</strong>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col md:flex-row py-10 bg-blue-950 mt-20 gap-8 md:gap-32 px-4 md:px-0">
+  <div class="md:pl-4">
+    <h1 class="text-white font-bold text-3xl">Let's Talk!</h1>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Contact Info
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      jawadahmad9938@gmail.com
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Pakistan South Punjab Multan
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      +92 301 1414134
+    </p>
+  </div>
+
+  <div>
+    <h1 class="text-white font-bold text-2xl">What I Do?</h1>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Sponsorship
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Advertisement
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Newsletter
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">Blogging</p>
+  </div>
+
+  <div>
+    <h1 class="text-white font-bold text-2xl">Skills</h1>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">HTML</p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">CSS</p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Tailwind CSS
+    </p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      JavaScript
+    </p>
+  </div>
+
+  <div>
+    <h1 class="text-white font-bold text-2xl">Hobbies</h1>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">Movies</p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">Music</p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">Reading</p>
+    <p class="font-bold text-[#959cb1] text-xl font-sans my-2">
+      Watching Documentaries
+    </p>
+  </div>
+</div>
+
+<div class="flex justify-center items-center space-x-4 bg-blue-950 py-4">
+  <div>
+    <button
+      class="rounded-full text-xs py-2 px-2 hover:shadow-md hover:shadow-black bg-[#959cb1] size-10"
+    >
+      <img src="/assets/facebook-logo-1-2-8U4mwzCA.png" alt="Facebook Logo" />
+    </button>
+  </div>
+
+  <div>
+    <button
+      class="rounded-full text-xs py-2 px-2 hover:shadow-md hover:shadow-black bg-[#959cb1] size-10"
+    >
+      <img src="/assets/free-twitter-logo-icon-2429-thumb-B3ZJexg3.png" alt="Twitter Logo" />
+    </button>
+  </div>
+  <div>
+    <button
+      class="rounded-full text-xs py-2 px-2 hover:shadow-md hover:shadow-black bg-[#959cb1] size-10"
+    >
+      <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20height='800px'%20width='800px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20461.001%20461.001'%20xml:space='preserve'%3e%3cg%3e%3cpath%20style='fill:%23F61C0D;'%20d='M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728%20c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137%20C461.001,110.259,418.135,67.393,365.257,67.393z%20M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607%20c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z'/%3e%3c/g%3e%3c/svg%3e" alt="YouTube Logo" />
+    </button>
+  </div>
+  <div>
+    <button
+      class="rounded-full text-xs py-2 px-2 hover:shadow-md hover:shadow-black bg-[#959cb1] size-10"
+    >
+      <img src="/assets/linkedin-icon-logo-png-transparent-CX7B_9nT.png" alt="LinkedIn Logo" />
+    </button>
+  </div>
+</div>
+
+<div
+  class="flex justify-center items-center space-x-4 bg-blue-950 py-4 text-white font-medium"
+>
+  <p class="text-center">All rights reserved by &copy; Jawad Ahmad Creation.</p>
+</div>
+
+</body>
+</html>
